@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spectra Q&A</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .faq-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .faq {
+            text-align: left;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            background: #eaeaea;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Spectra Q&A</h1>
+    <div class="faq-container">
+        <div class="faq" onclick="toggleAnswer(0)">What is Spectra?</div>
+        <div class="answer">Spectra is a music streaming app that lets users switch between different versions of a song, like Regular, Live Concert, and Up Close & Raw.</div>
+        
+        <div class="faq" onclick="toggleAnswer(1)">How does the Discover function work?</div>
+        <div class="answer">The Discover section includes a For You page with personalized recommendations and a Following section to keep up with favorite artists.</div>
+        
+        <div class="faq" onclick="toggleAnswer(2)">Is Spectra free to use?</div>
+        <div class="answer">Spectra will offer both free and premium subscription options, allowing users to explore different features.</div>
+    </div>
+
+    <script>
+        function toggleAnswer(index) {
+            let answers = document.querySelectorAll('.answer');
+            answers[index].style.display = (answers[index].style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
