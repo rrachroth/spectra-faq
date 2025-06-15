@@ -1,0 +1,32 @@
+Compiled successfully!
+
+You can now view musician-match-app in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.3.103:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+git init
+
+git init
+
+git remote add origin https://github.com/rrachroth/spectra-faq.git
+git add .
+
+git commit -m "Initial React Firebase app setup"
+
+git push -u origin main
+ 
+git add .
+git commit -m "Replace old project with new React Firebase app"
+git push origin main --force
+
+git add .
+git commit -m "Replace old project with new React Firebase app"
+git push origin main --force
+
+
+ 
